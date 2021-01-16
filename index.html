@@ -1,1 +1,553 @@
-<!DOCTYPE html><html lang="en"><head>	<meta charset="UTF-8">	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<title>Charger - your best charging buddy!</title>	<link rel="shortcut icon" href="img/favicon.png" type="image/png">	<link rel="stylesheet" href="css/style.min.css"></head><body>	<script>		function testWebP(callback) {			var webP = new Image();			webP.onload = webP.onerror = function () {				callback(webP.height == 2);			};			webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";		}		testWebP(function (support) {			if (support == true) {				document.querySelector('body').classList.add('webp');			} else {				document.querySelector('body').classList.add('no-webp');			}		});	</script>	<div class="wrapper">		<div class="top-page bg">			<div class="top-page__filter green-filter">				<div class="top-page__container">					<header class="header">						<h1 class="header__title">							<a href="">Charger</a>						</h1>					</header>					<section class="battery">						<div class="battery__left">							<div class="battery__info info">								<div class="info__top">									<picture><source srcset="img/battery/search.webp" type="image/webp"><img src="img/battery/search.png" alt=""></picture>									<h2 class="info__title">										<span>Battery Down?</span><br>										<span>No Problem Anymore!</span>									</h2>								</div>								<p class="info__paragraph">									With Charger you can easily find a place nearby to charge your phone and charge yourself, say, with									a									cup of									delicious									coffee or whatever you wish at the moment.								</p>							</div>							<a href="" class="battery__appstore appstore">								<img src="img/apple_logo.svg" alt="">								<div>									<p>Soon on the</p>									<p>App Store</p>								</div>							</a>							<form class="battery__form notify">								<label for="email-1" class="notify__label notify__label_sm notify__label_w">Sign up for the release									date:</label>								<div class="notify__row">									<input type="email" id="email-1" placeholder="Your e-mail" required class="_t">									<button type="submit" class="btn btn_w">										<span class="btn__text">											Notify me										</span>										<span class="btn__waves"></span>										<picture><source srcset="img/favicon_w.webp" type="image/webp"><img src="img/favicon_w.png" alt=""></picture>									</button>								</div>							</form>						</div>						<div class="battery__right">							<picture><source srcset="img/screen01.webp" type="image/webp"><img src="img/screen01.png" alt="" data-anim="no-hide"></picture>							<picture><source srcset="img/screen02.webp" type="image/webp"><img src="img/screen02.png" alt="" data-anim="no-hide"></picture>						</div>					</section>				</div>			</div>		</div>		<section class="share">			<div class="share__container" data-anim="no-hide">				<div class="share__left">					<picture><source srcset="img/share/phone04.webp" type="image/webp"><img src="img/share/phone04.png" alt=""></picture>					<picture><source srcset="img/share/phone03.webp" type="image/webp"><img src="img/share/phone03.png" alt=""></picture>				</div>				<div class="share__right">					<div class="share__item sItem">						<div class="sItem__header">							<picture><source srcset="img/share/01.webp" type="image/webp"><img src="img/share/01.png" alt="" data-anim=""></picture>							<h2 class="sItem__title">Share your plug</h2>						</div>						<p class="sItem__text">							Support the community and earn good karma by hosting people and charging their phones. Get extra Watts							and							maybe even							new friends and acquaintances.						</p>					</div>					<div class="share__item sItem">						<div class="sItem__header">							<picture><source srcset="img/share/02.webp" type="image/webp"><img src="img/share/02.png" alt="" data-anim=""></picture>							<h2 class="sItem__title">Grow your business</h2>						</div>						<p class="sItem__text">							Attract more visitors and create a positive image by helping them when they need it the most. Set up							special							promotions							and earn your customers’ loyalty. Automate the process with powerfull premium features.						</p>					</div>				</div>			</div>		</section>		<section class="easy">			<div class="easy__container">				<div class="easy__top dualTitle">					<picture><source srcset="img/easy/01.webp" type="image/webp"><img src="img/easy/01.png" alt=""></picture>					<h2 class="dualTitle__title">						<span>Easy as</span><br>						<span>One, Two, Three</span>					</h2>				</div>				<div class="easy__row" data-anim="no-hide">					<div class="easy__item eItem">						<div class="eItem__num">							1						</div>						<p class="eItem__text">							Set up your search/share settings						</p>						<div class="eItem__img">							<picture><source srcset="img/easy/screen01.webp" type="image/webp"><img src="img/easy/screen01.png" alt=""></picture>						</div>					</div>					<div class="easy__item eItem">						<div class="eItem__num">							2						</div>						<p class="eItem__text">							Browse spots on the map or as a list – up to you						</p>						<div class="eItem__img">							<picture><source srcset="img/easy/screen02.webp" type="image/webp"><img src="img/easy/screen02.png" alt=""></picture>						</div>					</div>					<div class="easy__item eItem">						<div class="eItem__num">							3						</div>						<p class="eItem__text">							Pick the spot you like and send a request						</p>						<div class="eItem__img">							<picture><source srcset="img/easy/screen03.webp" type="image/webp"><img src="img/easy/screen03.png" alt=""></picture>						</div>					</div>				</div>			</div>		</section>		<section class="spots">			<div class="spots__container">				<div class="spots__top dualTitle _w">					<h2 class="dualTitle__title">						<span>Picky with the spots?</span><br>						<span>Get Exactly What You Want!</span>					</h2>				</div>				<div class="spots__row">					<picture><source srcset="img/10-layers.webp" type="image/webp"><img src="img/10-layers.png" alt=""></picture>					<picture><source srcset="img/10-layers.webp" type="image/webp"><img src="img/10-layers.png" alt=""></picture>					<picture><source srcset="img/10-layers.webp" type="image/webp"><img src="img/10-layers.png" alt=""></picture>				</div>			</div>		</section>		<section class="business bg">			<div class="business__container">				<div class="business__left">					<div class="business__left-top">						<div class="business__header">							<span data-anim="" class="business__image _anim-scale"><picture><source srcset="img/business/01.webp" type="image/webp"><img src="img/business/01.png" alt=""></picture></span>							<h2 class="business__title">Running a Business?</h2>						</div>						<p class="business__subtext">							PlugSpot opens up new possibilities for your growth. Attracting customers and building a positive brand							image and							earning customer loyalty has never been easier.						</p>					</div>					<div class="business__left-bot">						<div class="business__item _anim-left" data-anim="no-hide ">							<picture><source srcset="img/business/ok.webp" type="image/webp"><img src="img/business/ok.png" alt=""></picture>							<p>Set up your share settings</p>						</div>						<div class="business__item _anim-left" data-anim="no-hide ">							<picture><source srcset="img/business/ok.webp" type="image/webp"><img src="img/business/ok.png" alt=""></picture>							<p>Create as many spots as you need</p>						</div>						<div class="business__item _anim-left" data-anim="no-hide ">							<picture><source srcset="img/business/ok.webp" type="image/webp"><img src="img/business/ok.png" alt=""></picture>							<p>Present yourself with custom cover images</p>						</div>						<div class="business__item _anim-left" data-anim="no-hide ">							<picture><source srcset="img/business/ok.webp" type="image/webp"><img src="img/business/ok.png" alt=""></picture>							<p>Auto-accept charge requests</p>						</div>						<div class="business__item _anim-left" data-anim="no-hide ">							<picture><source srcset="img/business/ok.webp" type="image/webp"><img src="img/business/ok.png" alt=""></picture>							<p>Set up custom promotions</p>						</div>					</div>				</div>				<div class="business__right">					<picture><source srcset="img/business/3phones.webp" type="image/webp"><img src="img/business/3phones.png" alt=""></picture>				</div>			</div>		</section>		<section class="signup signup_grey">			<div class="signup__container">				<form class="notify">					<h2 class="notify__title">Sign up for the release						date:</h2>					<div class="notify__row">						<input type="email" id="email-2" placeholder="Your e-mail" required class="_g">						<button type="submit" class="btn btn_b btn_wide">							<span class="btn__text">								Notify me							</span>							<span class="btn__waves"></span>							<picture><source srcset="img/favicon_w.webp" type="image/webp"><img src="img/favicon_w.png" alt=""></picture>						</button>					</div>				</form>			</div>		</section>		<section class="gift">			<div class="gift__container">				<div class="gift__top">					<picture><source srcset="img/favicon.webp" type="image/webp"><img src="img/favicon.png" alt=""></picture>					<div class="dualTitle dualTitle_mb43px">						<h2 class="dualTitle__title">							<span>Watch your Watts, Level Up &</span><br>							<span>Win Special Gifts</span>						</h2>					</div>					<div class="gift__text">						PlugSpot uses a fun way of tracking your activity. You earn watts for sharing your plug,						or exchange them for being						charged. The more you help – the more Watts you get. Watts help you develope your profile and level up. The						most active						users get special prizes, like power banks, chargers or an awesome Apple Watch!</div>				</div>				<div class="gift__bottom">					<div class="gift__image _anim-scale" data-anim="">						<picture><source srcset="img/watch.webp" type="image/webp"><img src="img/watch.png" alt=""></picture>					</div>					<button class="btn btn_b">						<span class="btn__text">							Sign Up to Get a Chance to Win						</span>						<span class="btn__waves"></span>						<picture><source srcset="img/favicon_w.webp" type="image/webp"><img src="img/favicon_w.png" alt=""></picture>					</button>				</div>			</div>		</section>		<section class="users">			<div class="users__container">				<h2 class="users__title">					Top 5 Active Users This Week:				</h2>				<div class="users__body">					<div class="users__item uItem _anim-left" data-anim="no-hide">						<div class="uItem__user">							<picture><source srcset="img/users/01.webp" type="image/webp"><img src="img/users/01.jpg" alt=""></picture>						</div>						<div class="uItem__rank">							<picture><source srcset="img/users/a01.webp" type="image/webp"><img src="img/users/a01.png" alt=""></picture>						</div>						<div class="uItem__personal">							<p class="uItem__name">								Robert Downey Jr.							</p>							<p class="uItem__from">								From Croatia							</p>							<div class="uItem__stars">								<div class="uItem__rating rating" data-rating="4.3">									<div class="rating__body">										<div class="rating__active"></div>										<div class="rating__items">											<input type="radio" name="rating" class="rating__item" value="1">											<input type="radio" name="rating" class="rating__item" value="2">											<input type="radio" name="rating" class="rating__item" value="3">											<input type="radio" name="rating" class="rating__item" value="4">											<input type="radio" name="rating" class="rating__item" value="5">										</div>									</div>									<div class="rating__text"><span class="rating__value"></span> out of 75 reviews</div>								</div>							</div>						</div>						<div class="uItem__watt">							<p class="uItem__watt-title">								Watt Counter							</p>							<div class="uItem__watt-bottom">								<picture><source srcset="img/favicon.webp" type="image/webp"><img src="img/favicon.png" alt=""></picture>								<span class="uItem__watt-count">150 000</span>							</div>						</div>					</div>					<div class="users__item uItem _anim-left" data-anim="no-hide">						<div class="uItem__user">							<picture><source srcset="img/users/02.webp" type="image/webp"><img src="img/users/02.jpg" alt=""></picture>						</div>						<div class="uItem__rank">							<picture><source srcset="img/users/a02.webp" type="image/webp"><img src="img/users/a02.png" alt=""></picture>						</div>						<div class="uItem__personal">							<p class="uItem__name">								John Wick							</p>							<p class="uItem__from">								from unknown							</p>							<div class="uItem__stars">								<div class="uItem__rating rating" data-rating="1.5">									<div class="rating__body">										<div class="rating__active"></div>										<div class="rating__items">											<input type="radio" name="rating" class="rating__item" value="1">											<input type="radio" name="rating" class="rating__item" value="2">											<input type="radio" name="rating" class="rating__item" value="3">											<input type="radio" name="rating" class="rating__item" value="4">											<input type="radio" name="rating" class="rating__item" value="5">										</div>									</div>									<div class="rating__text"><span class="rating__value"></span> out of 11 reviews</div>								</div>							</div>						</div>						<div class="uItem__watt">							<p class="uItem__watt-title">								Watt Counter							</p>							<div class="uItem__watt-bottom">								<picture><source srcset="img/favicon.webp" type="image/webp"><img src="img/favicon.png" alt=""></picture>								<span class="uItem__watt-count">130 000</span>							</div>						</div>					</div>					<div class="users__item uItem _anim-left" data-anim="no-hide">						<div class="uItem__user">							<picture><source srcset="img/users/03.webp" type="image/webp"><img src="img/users/03.jpg" alt=""></picture>						</div>						<div class="uItem__rank">							<picture><source srcset="img/users/a03.webp" type="image/webp"><img src="img/users/a03.png" alt=""></picture>						</div>						<div class="uItem__personal">							<p class="uItem__name">								George Clooney							</p>							<p class="uItem__from">								From Croatia							</p>							<div class="uItem__stars">								<div class="uItem__rating rating" data-rating="0.2">									<div class="rating__body">										<div class="rating__active"></div>										<div class="rating__items">											<input type="radio" name="rating" class="rating__item" value="1">											<input type="radio" name="rating" class="rating__item" value="2">											<input type="radio" name="rating" class="rating__item" value="3">											<input type="radio" name="rating" class="rating__item" value="4">											<input type="radio" name="rating" class="rating__item" value="5">										</div>									</div>									<div class="rating__text"><span class="rating__value"></span> out of 2 reviews</div>								</div>							</div>						</div>						<div class="uItem__watt">							<p class="uItem__watt-title">								Watt Counter							</p>							<div class="uItem__watt-bottom">								<picture><source srcset="img/favicon.webp" type="image/webp"><img src="img/favicon.png" alt=""></picture>								<span class="uItem__watt-count">112 000</span>							</div>						</div>					</div>					<div class="users__item uItem _anim-left" data-anim="no-hide">						<div class="uItem__user">							<picture><source srcset="img/users/04.webp" type="image/webp"><img src="img/users/04.jpg" alt=""></picture>						</div>						<div class="uItem__rank">							<picture><source srcset="img/users/a04.webp" type="image/webp"><img src="img/users/a04.png" alt=""></picture>						</div>						<div class="uItem__personal">							<p class="uItem__name">								OctoPussyCat							</p>							<p class="uItem__from">								From Georgia							</p>							<div class="uItem__stars">								<div class="uItem__rating rating" data-rating="5">									<div class="rating__body">										<div class="rating__active"></div>										<div class="rating__items">											<input type="radio" name="rating" class="rating__item" value="1">											<input type="radio" name="rating" class="rating__item" value="2">											<input type="radio" name="rating" class="rating__item" value="3">											<input type="radio" name="rating" class="rating__item" value="4">											<input type="radio" name="rating" class="rating__item" value="5">										</div>									</div>									<div class="rating__text"><span class="rating__value"></span> out of 23 reviews</div>								</div>							</div>						</div>						<div class="uItem__watt">							<p class="uItem__watt-title">								Watt Counter							</p>							<div class="uItem__watt-bottom">								<picture><source srcset="img/favicon.webp" type="image/webp"><img src="img/favicon.png" alt=""></picture>								<span class="uItem__watt-count">94 000</span>							</div>						</div>					</div>					<div class="users__item uItem _anim-left" data-anim="no-hide">						<div class="uItem__user">							<picture><source srcset="img/users/05.webp" type="image/webp"><img src="img/users/05.jpg" alt=""></picture>						</div>						<div class="uItem__rank">							<picture><source srcset="img/users/a05.webp" type="image/webp"><img src="img/users/a05.png" alt=""></picture>						</div>						<div class="uItem__personal">							<p class="uItem__name">								Christian Bale							</p>							<p class="uItem__from">								From England							</p>							<div class="uItem__stars">								<div class="uItem__rating rating" data-rating="3.8">									<div class="rating__body">										<div class="rating__active"></div>										<div class="rating__items">											<input type="radio" name="rating" class="rating__item" value="1">											<input type="radio" name="rating" class="rating__item" value="2">											<input type="radio" name="rating" class="rating__item" value="3">											<input type="radio" name="rating" class="rating__item" value="4">											<input type="radio" name="rating" class="rating__item" value="5">										</div>									</div>									<div class="rating__text"><span class="rating__value"></span> out of 11 reviews</div>								</div>							</div>						</div>						<div class="uItem__watt">							<p class="uItem__watt-title">								Watt Counter							</p>							<div class="uItem__watt-bottom">								<picture><source srcset="img/favicon.webp" type="image/webp"><img src="img/favicon.png" alt=""></picture>								<span class="uItem__watt-count">75 000</span>							</div>						</div>					</div>				</div>			</div>		</section>		<section class="signup signup_black">			<div class="signup__container">				<form class="notify">					<h2 class="notify__title notify__title_g">Sign up for the release						date:</h2>					<div class="notify__row">						<input type="email" id="email-3" placeholder="Your e-mail" required class="_w">						<button type="submit" class="btn btn_g btn_wide">							<span class="btn__text">								Notify me							</span>							<span class="btn__waves"></span>							<picture><source srcset="img/favicon_w.webp" type="image/webp"><img src="img/favicon_w.png" alt=""></picture>						</button>					</div>				</form>			</div>		</section>		<section class="contact bg">			<div class="contact__container">				<div class="contact__left">					<h2 class="contact__title">Contact Us</h2>					<form class="contact__form contform">						<input type="text" name="name" placeholder="Name" required>						<input type="email" name="email" placeholder="E-mail" required>						<textarea name="message" placeholder="Message" required></textarea>						<button type="submit" class="btn btn_b btn_wide">							<span class="btn__text">								Send							</span>							<span class="btn__waves"></span>							<picture><source srcset="img/favicon_w.webp" type="image/webp"><img src="img/favicon_w.png" alt=""></picture>						</button>					</form>				</div>				<div class="contact__right">					<p class="contact__title">Keep in Touch</p>					<nav class="contact__social">						<a href="#" class="contact__link">							<div class="_anim-scale" data-anim=""><picture><source srcset="img/contact/facebook.webp" type="image/webp"><img src="img/contact/facebook.png" alt=""></picture></div>							<span>Facebook</span>						</a>						<a href="#" class="contact__link">							<div class="_anim-scale" data-anim=""><picture><source srcset="img/contact/twitter.webp" type="image/webp"><img src="img/contact/twitter.png" alt=""></picture></div>							<span>Twitter</span>						</a>						<a href="#" class="contact__link">							<div class="_anim-scale" data-anim=""><picture><source srcset="img/contact/vkontakte.webp" type="image/webp"><img src="img/contact/vkontakte.png" alt=""></picture></div>							<span>Vkontakte</span>						</a>					</nav>				</div>			</div>		</section>		<footer class="footer">			<div class="footer__container">				<div class="footer__row">					<a href="#" class="footer__brand" title="PlugSpot">						<picture><source srcset="img/footer/01.webp" type="image/webp"><img src="img/footer/01.png" alt=""></picture>						<picture><source srcset="img/footer/02.webp" type="image/webp"><img src="img/footer/02.png" alt="PlugSpot"></picture>					</a>					<h2 class="footer__copyright">						PlugSpot App 2021. All Rights Reserved					</h2>				</div>			</div>		</footer>	</div>	<script src="js/script.min.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Charger - your best charging buddy!</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<script>
+		function testWebP(callback) {
+			var webP = new Image();
+			webP.onload = webP.onerror = function () {
+				callback(webP.height == 2);
+			};
+			webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+		}
+
+		testWebP(function (support) {
+			if (support == true) {
+				document.querySelector('body').classList.add('webp');
+			} else {
+				document.querySelector('body').classList.add('no-webp');
+			}
+		});
+	</script>
+	<div class="wrapper">
+		<div class="top-page bg">
+			<div class="top-page__filter green-filter">
+				<div class="top-page__container">
+					<header class="header">
+						<h1 class="header__title">
+							<a href="">Charger</a>
+						</h1>
+					</header>
+					<section class="battery">
+						<div class="battery__left">
+							<div class="battery__info info">
+								<div class="info__top">
+									<picture><source srcset="img/battery/search.webp" type="image/webp"><img src="img/battery/search.png" alt=""></picture>
+									<h2 class="info__title">
+										<span>Battery Down?</span><br>
+										<span>No Problem Anymore!</span>
+									</h2>
+								</div>
+								<p class="info__paragraph">
+									With Charger you can easily find a place nearby to charge your phone and charge yourself, say, with
+									a
+									cup of
+									delicious
+									coffee or whatever you wish at the moment.
+								</p>
+							</div>
+							<a href="" class="battery__appstore appstore">
+								<img src="img/apple_logo.svg" alt="">
+								<div>
+									<p>Soon on the</p>
+									<p>App Store</p>
+								</div>
+							</a>
+							<form class="battery__form notify">
+								<label for="email-1" class="notify__label notify__label_sm notify__label_w">Sign up for the release
+									date:</label>
+								<div class="notify__row">
+									<input type="email" id="email-1" placeholder="Your e-mail" required class="_t">
+									<button type="submit" class="btn btn_w">
+										<span class="btn__text">
+											Notify me
+										</span>
+										<span class="btn__waves"></span>
+										<picture><source srcset="img/favicon_w.webp" type="image/webp"><img src="img/favicon_w.png" alt=""></picture>
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="battery__right">
+							<picture><source srcset="img/screen01.webp" type="image/webp"><img src="img/screen01.png" alt="" data-anim="no-hide"></picture>
+							<picture><source srcset="img/screen02.webp" type="image/webp"><img src="img/screen02.png" alt="" data-anim="no-hide"></picture>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<section class="share">
+			<div class="share__container" data-anim="no-hide">
+				<div class="share__left">
+					<picture><source srcset="img/share/phone04.webp" type="image/webp"><img src="img/share/phone04.png" alt=""></picture>
+					<picture><source srcset="img/share/phone03.webp" type="image/webp"><img src="img/share/phone03.png" alt=""></picture>
+				</div>
+				<div class="share__right">
+					<div class="share__item sItem">
+						<div class="sItem__header">
+							<picture><source srcset="img/share/01.webp" type="image/webp"><img src="img/share/01.png" alt="" data-anim=""></picture>
+							<h2 class="sItem__title">Share your plug</h2>
+						</div>
+						<p class="sItem__text">
+							Support the community and earn good karma by hosting people and charging their phones. Get extra Watts
+							and
+							maybe even
+							new friends and acquaintances.
+						</p>
+					</div>
+					<div class="share__item sItem">
+						<div class="sItem__header">
+							<picture><source srcset="img/share/02.webp" type="image/webp"><img src="img/share/02.png" alt="" data-anim=""></picture>
+							<h2 class="sItem__title">Grow your business</h2>
+						</div>
+						<p class="sItem__text">
+							Attract more visitors and create a positive image by helping them when they need it the most. Set up
+							special
+							promotions
+							and earn your customers’ loyalty. Automate the process with powerfull premium features.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="easy">
+			<div class="easy__container">
+				<div class="easy__top dualTitle">
+					<picture><source srcset="img/easy/01.webp" type="image/webp"><img src="img/easy/01.png" alt=""></picture>
+					<h2 class="dualTitle__title">
+						<span>Easy as</span><br>
+						<span>One, Two, Three</span>
+					</h2>
+				</div>
+				<div class="easy__row" data-anim="no-hide">
+					<div class="easy__item eItem">
+						<div class="eItem__num">
+							1
+						</div>
+						<p class="eItem__text">
+							Set up your search/share settings
+						</p>
+						<div class="eItem__img">
+							<picture><source srcset="img/easy/screen01.webp" type="image/webp"><img src="img/easy/screen01.png" alt=""></picture>
+						</div>
+					</div>
+					<div class="easy__item eItem">
+						<div class="eItem__num">
+							2
+						</div>
+						<p class="eItem__text">
+							Browse spots on the map or as a list – up to you
+						</p>
+						<div class="eItem__img">
+							<picture><source srcset="img/easy/screen02.webp" type="image/webp"><img src="img/easy/screen02.png" alt=""></picture>
+						</div>
+					</div>
+					<div class="easy__item eItem">
+						<div class="eItem__num">
+							3
+						</div>
+						<p class="eItem__text">
+							Pick the spot you like and send a request
+						</p>
+						<div class="eItem__img">
+							<picture><source srcset="img/easy/screen03.webp" type="image/webp"><img src="img/easy/screen03.png" alt=""></picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="spots">
+			<div class="spots__container">
+				<div class="spots__top dualTitle _w">
+					<h2 class="dualTitle__title">
+						<span>Picky with the spots?</span><br>
+						<span>Get Exactly What You Want!</span>
+					</h2>
+				</div>
+				<div class="spots__row">
+					<picture><source srcset="img/10-layers.webp" type="image/webp"><img src="img/10-layers.png" alt=""></picture>
+					<picture><source srcset="img/10-layers.webp" type="image/webp"><img src="img/10-layers.png" alt=""></picture>
+					<picture><source srcset="img/10-layers.webp" type="image/webp"><img src="img/10-layers.png" alt=""></picture>
+				</div>
+			</div>
+		</section>
+		<section class="business bg">
+			<div class="business__container">
+				<div class="business__left">
+					<div class="business__left-top">
+						<div class="business__header">
+							<span data-anim="" class="business__image _anim-scale"><picture><source srcset="img/business/01.webp" type="image/webp"><img src="img/business/01.png" alt=""></picture></span>
+							<h2 class="business__title">Running a Business?</h2>
+						</div>
+						<p class="business__subtext">
+							PlugSpot opens up new possibilities for your growth. Attracting customers and building a positive brand
+							image and
+							earning customer loyalty has never been easier.
+						</p>
+					</div>
+					<div class="business__left-bot">
+						<div class="business__item _anim-left" data-anim="no-hide ">
+							<picture><source srcset="img/business/ok.webp" type="image/webp"><img src="img/business/ok.png" alt=""></picture>
+							<p>Set up your share settings</p>
+						</div>
+						<div class="business__item _anim-left" data-anim="no-hide ">
+							<picture><source srcset="img/business/ok.webp" type="image/webp"><img src="img/business/ok.png" alt=""></picture>
+							<p>Create as many spots as you need</p>
+						</div>
+						<div class="business__item _anim-left" data-anim="no-hide ">
+							<picture><source srcset="img/business/ok.webp" type="image/webp"><img src="img/business/ok.png" alt=""></picture>
+							<p>Present yourself with custom cover images</p>
+						</div>
+						<div class="business__item _anim-left" data-anim="no-hide ">
+							<picture><source srcset="img/business/ok.webp" type="image/webp"><img src="img/business/ok.png" alt=""></picture>
+							<p>Auto-accept charge requests</p>
+						</div>
+						<div class="business__item _anim-left" data-anim="no-hide ">
+							<picture><source srcset="img/business/ok.webp" type="image/webp"><img src="img/business/ok.png" alt=""></picture>
+							<p>Set up custom promotions</p>
+						</div>
+					</div>
+				</div>
+				<div class="business__right">
+					<picture><source srcset="img/business/3phones.webp" type="image/webp"><img src="img/business/3phones.png" alt=""></picture>
+				</div>
+			</div>
+		</section>
+		<section class="signup signup_grey">
+			<div class="signup__container">
+				<form class="notify">
+					<h2 class="notify__title">Sign up for the release
+						date:</h2>
+					<div class="notify__row">
+						<input type="email" id="email-2" placeholder="Your e-mail" required class="_g">
+						<button type="submit" class="btn btn_b btn_wide">
+							<span class="btn__text">
+								Notify me
+							</span>
+							<span class="btn__waves"></span>
+							<picture><source srcset="img/favicon_w.webp" type="image/webp"><img src="img/favicon_w.png" alt=""></picture>
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="gift">
+			<div class="gift__container">
+				<div class="gift__top">
+					<picture><source srcset="img/favicon.webp" type="image/webp"><img src="img/favicon.png" alt=""></picture>
+					<div class="dualTitle dualTitle_mb43px">
+						<h2 class="dualTitle__title">
+							<span>Watch your Watts, Level Up &</span><br>
+							<span>Win Special Gifts</span>
+						</h2>
+					</div>
+					<div class="gift__text">
+						PlugSpot uses a fun way of tracking your activity. You earn watts for sharing your plug,
+						or exchange them for being
+						charged. The more you help – the more Watts you get. Watts help you develope your profile and level up. The
+						most active
+						users get special prizes, like power banks, chargers or an awesome Apple Watch!</div>
+				</div>
+				<div class="gift__bottom">
+					<div class="gift__image _anim-scale" data-anim="">
+						<picture><source srcset="img/watch.webp" type="image/webp"><img src="img/watch.png" alt=""></picture>
+					</div>
+					<button class="btn btn_b">
+						<span class="btn__text">
+							Sign Up to Get a Chance to Win
+						</span>
+						<span class="btn__waves"></span>
+						<picture><source srcset="img/favicon_w.webp" type="image/webp"><img src="img/favicon_w.png" alt=""></picture>
+					</button>
+				</div>
+			</div>
+		</section>
+		<section class="users">
+			<div class="users__container">
+				<h2 class="users__title">
+					Top 5 Active Users This Week:
+				</h2>
+				<div class="users__body">
+					<div class="users__item uItem _anim-left" data-anim="no-hide">
+						<div class="uItem__user">
+							<picture><source srcset="img/users/01.webp" type="image/webp"><img src="img/users/01.jpg" alt=""></picture>
+						</div>
+						<div class="uItem__rank">
+							<picture><source srcset="img/users/a01.webp" type="image/webp"><img src="img/users/a01.png" alt=""></picture>
+						</div>
+						<div class="uItem__personal">
+							<p class="uItem__name">
+								Robert Downey Jr.
+							</p>
+							<p class="uItem__from">
+								From Croatia
+							</p>
+							<div class="uItem__stars">
+								<div class="uItem__rating rating" data-rating="4.3">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" name="rating" class="rating__item" value="1">
+											<input type="radio" name="rating" class="rating__item" value="2">
+											<input type="radio" name="rating" class="rating__item" value="3">
+											<input type="radio" name="rating" class="rating__item" value="4">
+											<input type="radio" name="rating" class="rating__item" value="5">
+										</div>
+									</div>
+									<div class="rating__text"><span class="rating__value"></span> out of 75 reviews</div>
+								</div>
+							</div>
+						</div>
+						<div class="uItem__watt">
+							<p class="uItem__watt-title">
+								Watt Counter
+							</p>
+							<div class="uItem__watt-bottom">
+								<picture><source srcset="img/favicon.webp" type="image/webp"><img src="img/favicon.png" alt=""></picture>
+								<span class="uItem__watt-count">150 000</span>
+							</div>
+						</div>
+					</div>
+					<div class="users__item uItem _anim-left" data-anim="no-hide">
+						<div class="uItem__user">
+							<picture><source srcset="img/users/02.webp" type="image/webp"><img src="img/users/02.jpg" alt=""></picture>
+						</div>
+						<div class="uItem__rank">
+							<picture><source srcset="img/users/a02.webp" type="image/webp"><img src="img/users/a02.png" alt=""></picture>
+						</div>
+						<div class="uItem__personal">
+							<p class="uItem__name">
+								John Wick
+							</p>
+							<p class="uItem__from">
+								from unknown
+							</p>
+							<div class="uItem__stars">
+								<div class="uItem__rating rating" data-rating="1.5">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" name="rating" class="rating__item" value="1">
+											<input type="radio" name="rating" class="rating__item" value="2">
+											<input type="radio" name="rating" class="rating__item" value="3">
+											<input type="radio" name="rating" class="rating__item" value="4">
+											<input type="radio" name="rating" class="rating__item" value="5">
+										</div>
+									</div>
+									<div class="rating__text"><span class="rating__value"></span> out of 11 reviews</div>
+								</div>
+							</div>
+						</div>
+						<div class="uItem__watt">
+							<p class="uItem__watt-title">
+								Watt Counter
+							</p>
+							<div class="uItem__watt-bottom">
+								<picture><source srcset="img/favicon.webp" type="image/webp"><img src="img/favicon.png" alt=""></picture>
+								<span class="uItem__watt-count">130 000</span>
+							</div>
+						</div>
+					</div>
+					<div class="users__item uItem _anim-left" data-anim="no-hide">
+						<div class="uItem__user">
+							<picture><source srcset="img/users/03.webp" type="image/webp"><img src="img/users/03.jpg" alt=""></picture>
+						</div>
+						<div class="uItem__rank">
+							<picture><source srcset="img/users/a03.webp" type="image/webp"><img src="img/users/a03.png" alt=""></picture>
+						</div>
+						<div class="uItem__personal">
+							<p class="uItem__name">
+								George Clooney
+							</p>
+							<p class="uItem__from">
+								From Croatia
+							</p>
+							<div class="uItem__stars">
+								<div class="uItem__rating rating" data-rating="1.4">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" name="rating" class="rating__item" value="1">
+											<input type="radio" name="rating" class="rating__item" value="2">
+											<input type="radio" name="rating" class="rating__item" value="3">
+											<input type="radio" name="rating" class="rating__item" value="4">
+											<input type="radio" name="rating" class="rating__item" value="5">
+										</div>
+									</div>
+									<div class="rating__text"><span class="rating__value"></span> out of 2 reviews</div>
+								</div>
+							</div>
+						</div>
+						<div class="uItem__watt">
+							<p class="uItem__watt-title">
+								Watt Counter
+							</p>
+							<div class="uItem__watt-bottom">
+								<picture><source srcset="img/favicon.webp" type="image/webp"><img src="img/favicon.png" alt=""></picture>
+								<span class="uItem__watt-count">112 000</span>
+							</div>
+						</div>
+					</div>
+					<div class="users__item uItem _anim-left" data-anim="no-hide">
+						<div class="uItem__user">
+							<picture><source srcset="img/users/04.webp" type="image/webp"><img src="img/users/04.jpg" alt=""></picture>
+						</div>
+						<div class="uItem__rank">
+							<picture><source srcset="img/users/a04.webp" type="image/webp"><img src="img/users/a04.png" alt=""></picture>
+						</div>
+						<div class="uItem__personal">
+							<p class="uItem__name">
+								OctoPussyCat
+							</p>
+							<p class="uItem__from">
+								From Georgia
+							</p>
+							<div class="uItem__stars">
+								<div class="uItem__rating rating" data-rating="5">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" name="rating" class="rating__item" value="1">
+											<input type="radio" name="rating" class="rating__item" value="2">
+											<input type="radio" name="rating" class="rating__item" value="3">
+											<input type="radio" name="rating" class="rating__item" value="4">
+											<input type="radio" name="rating" class="rating__item" value="5">
+										</div>
+									</div>
+									<div class="rating__text"><span class="rating__value"></span> out of 23 reviews</div>
+								</div>
+							</div>
+						</div>
+						<div class="uItem__watt">
+							<p class="uItem__watt-title">
+								Watt Counter
+							</p>
+							<div class="uItem__watt-bottom">
+								<picture><source srcset="img/favicon.webp" type="image/webp"><img src="img/favicon.png" alt=""></picture>
+								<span class="uItem__watt-count">94 000</span>
+							</div>
+						</div>
+					</div>
+					<div class="users__item uItem _anim-left" data-anim="no-hide">
+						<div class="uItem__user">
+							<picture><source srcset="img/users/05.webp" type="image/webp"><img src="img/users/05.jpg" alt=""></picture>
+						</div>
+						<div class="uItem__rank">
+							<picture><source srcset="img/users/a05.webp" type="image/webp"><img src="img/users/a05.png" alt=""></picture>
+						</div>
+						<div class="uItem__personal">
+							<p class="uItem__name">
+								Christian Bale
+							</p>
+							<p class="uItem__from">
+								From England
+							</p>
+							<div class="uItem__stars">
+								<div class="uItem__rating rating" data-rating="3.8">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" name="rating" class="rating__item" value="1">
+											<input type="radio" name="rating" class="rating__item" value="2">
+											<input type="radio" name="rating" class="rating__item" value="3">
+											<input type="radio" name="rating" class="rating__item" value="4">
+											<input type="radio" name="rating" class="rating__item" value="5">
+										</div>
+									</div>
+									<div class="rating__text"><span class="rating__value"></span> out of 11 reviews</div>
+								</div>
+							</div>
+						</div>
+						<div class="uItem__watt">
+							<p class="uItem__watt-title">
+								Watt Counter
+							</p>
+							<div class="uItem__watt-bottom">
+								<picture><source srcset="img/favicon.webp" type="image/webp"><img src="img/favicon.png" alt=""></picture>
+								<span class="uItem__watt-count">75 000</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="signup signup_black">
+			<div class="signup__container">
+				<form class="notify">
+					<h2 class="notify__title notify__title_g">Sign up for the release
+						date:</h2>
+					<div class="notify__row">
+						<input type="email" id="email-3" placeholder="Your e-mail" required class="_w">
+						<button type="submit" class="btn btn_g btn_wide">
+							<span class="btn__text">
+								Notify me
+							</span>
+							<span class="btn__waves"></span>
+							<picture><source srcset="img/favicon_w.webp" type="image/webp"><img src="img/favicon_w.png" alt=""></picture>
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="contact bg">
+			<div class="contact__container">
+				<div class="contact__left">
+					<h2 class="contact__title">Contact Us</h2>
+					<form class="contact__form contform">
+						<input type="text" name="name" placeholder="Name" required>
+						<input type="email" name="email" placeholder="E-mail" required>
+						<textarea name="message" placeholder="Message" required></textarea>
+						<button type="submit" class="btn btn_b btn_wide">
+							<span class="btn__text">
+								Send
+							</span>
+							<span class="btn__waves"></span>
+							<picture><source srcset="img/favicon_w.webp" type="image/webp"><img src="img/favicon_w.png" alt=""></picture>
+						</button>
+					</form>
+				</div>
+				<div class="contact__right">
+					<p class="contact__title">Keep in Touch</p>
+					<nav class="contact__social">
+						<a href="#" class="contact__link">
+							<div class="_anim-scale" data-anim=""><picture><source srcset="img/contact/facebook.webp" type="image/webp"><img src="img/contact/facebook.png" alt=""></picture></div>
+							<span>Facebook</span>
+						</a>
+						<a href="#" class="contact__link">
+							<div class="_anim-scale" data-anim=""><picture><source srcset="img/contact/twitter.webp" type="image/webp"><img src="img/contact/twitter.png" alt=""></picture></div>
+							<span>Twitter</span>
+						</a>
+						<a href="#" class="contact__link">
+							<div class="_anim-scale" data-anim=""><picture><source srcset="img/contact/vkontakte.webp" type="image/webp"><img src="img/contact/vkontakte.png" alt=""></picture></div>
+							<span>Vkontakte</span>
+						</a>
+					</nav>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__row">
+					<a href="#" class="footer__brand" title="PlugSpot">
+						<picture><source srcset="img/footer/01.webp" type="image/webp"><img src="img/footer/01.png" alt=""></picture>
+						<picture><source srcset="img/footer/02.webp" type="image/webp"><img src="img/footer/02.png" alt="PlugSpot"></picture>
+					</a>
+					<h2 class="footer__copyright">
+						PlugSpot App 2021. All Rights Reserved
+					</h2>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>

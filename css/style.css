@@ -931,7 +931,7 @@ address {
   margin-bottom: 23px;
 }
 
-.business__header img {
+.business__image {
   margin-right: 28px;
 }
 
@@ -981,7 +981,7 @@ address {
   display: none;
 }
 
-._anim-scale {
+._anim-scale img {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -990,7 +990,7 @@ address {
   transition: 0.6s ease;
 }
 
-._anim-scale._anim {
+._anim-scale._anim img {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -1055,6 +1055,7 @@ address {
 
 .gift__image picture,
 .gift__image img {
+  display: inline-block;
   width: 100%;
 }
 
@@ -1127,6 +1128,7 @@ address {
 
 .uItem__name {
   font-size: 28px;
+  margin-bottom: 8px;
 }
 
 .uItem__from {
@@ -1301,7 +1303,7 @@ address {
   margin-bottom: 0;
 }
 
-.contact__link img {
+.contact__link div {
   margin-right: 19px;
 }
 

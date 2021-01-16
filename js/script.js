@@ -1,21 +1,28 @@
 const animItems = document.querySelectorAll("[data-anim]");
 
-if (animItems != false) {
+if (animItems) {
   window.addEventListener("scroll", animOnScroll);
-  function animOnScroll(params) {
+  function animOnScroll() {
     for (let i = 0; i < animItems.length; i++) {
       const animItem = animItems[i];
       const animItemHeight = animItem.offsetHeight;
-      const animItemOffset = offset(animItem).top;
-      const animStart = 4;
+      const animItemYOffset = offset(animItem).top;
+      const animStartPoint = 4;
 
-      let animItemPoint = window.innerHeight - animItemHeight / animStart;
+      let animItemPointTop;
+      let animItemPointBot;
       if (animItemHeight > window.innerHeight) {
-        animItemPoint = animItemHeight - window.innerHeight / animStart;
+        animItemPointTop =
+          window.innerHeight - window.innerHeight / animStartPoint; //OK
+        animItemPointBot = animItemHeight - window.innerHeight / animStartPoint; //OK
+      } else {
+        animItemPointTop =
+          window.innerHeight - animItemHeight / animStartPoint; //OK 
+        animItemPointBot = animItemHeight  - animItemHeight / animStartPoint; //OK
       }
       if (
-        pageYOffset > animItemOffset - animItemPoint &&
-        pageYOffset < animItemOffset + animItemHeight * (1 - 1 / animStart)
+        pageYOffset > animItemYOffset - animItemPointTop &&
+        pageYOffset < animItemYOffset + animItemPointBot
       ) {
         animItem.classList.add("_anim");
       } else if (animItem.getAttribute("data-anim") != "no-hide") {
@@ -55,6 +62,7 @@ function moveShare() {
   }
 }
 
+//Ініціалізація зіркового рейтингу
 const ratings = document.getElementsByClassName("rating");
 if (ratings) {
   const maxRatingValue = 5;
